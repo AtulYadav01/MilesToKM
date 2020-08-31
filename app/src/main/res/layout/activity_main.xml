@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/Miles"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <EditText
+        android:id="@+id/editTextmiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Miles"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="201dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KiloMeter"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <EditText
+        android:id="@+id/editTextKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Kilometers"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/buttonConvMilesToKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert Miles To Km"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <Button
+        android:id="@+id/buttonConvKmToMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert Km To Miles"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="540dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
