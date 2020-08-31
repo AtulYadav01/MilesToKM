@@ -8,57 +8,85 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="325dp"
         android:gravity="center_horizontal"
         android:text="@string/Miles"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="227dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextmiles"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="200dp"
         android:width="100dp"
+
+        android:autofillHints="Miles"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Miles"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="201dp"
+        android:text="@string/miles"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConvMilesToKm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KiloMeter"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="335dp" />
+        android:layout_width="95dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/kilometer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonConvMilesToKm"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextKm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="157dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="104dp"
         android:width="100dp"
+        android:autofillHints="Kilometers"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Kilometers"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="309dp" />
+        android:text="@string/kilometers"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConvMilesToKm"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
 
     <Button
         android:id="@+id/buttonConvMilesToKm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Convert Miles To Km"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="448dp" />
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/convert_miles_to_km"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConvKmToMiles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonConvKmToMiles"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Convert Km To Miles"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="540dp" />
+        android:layout_width="279dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="144dp"
+        android:text="@string/convert_km_to_miles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
