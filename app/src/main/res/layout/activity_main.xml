@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="LabelFor,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -60,7 +60,8 @@
         android:inputType="textPersonName"
         android:text="@string/kilometers"
         app:layout_constraintBottom_toTopOf="@+id/buttonConvMilesToKm"
-        app:layout_constraintStart_toEndOf="@+id/textView2" />
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/buttonConvMilesToKm"
